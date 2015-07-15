@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Galeria Fotografii</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body bgcolor="#ffee56" ><center>
+<h2>Galeria Fotografii</h2><hr>
+<a href="welcome">Strona Główna</a>    |  
+<a href="add.html">Dodaj zdjęcie</a>    |
+<a href="about.html">About</a>  
+<hr><b>Dodaj zdjęcie</b><hr><hr>
+
+        </center> 
+<center>
+    <h4>Dodaj zdjęcie z internetu:</h4>
+    Wybierz zdjecie do wgrania:<br>
+        <form action="DownloadServlet" method="post" >
+            Podaj link do obrazu: <input type="url" name="file_url" style="height:20px; width:400px"/>
+        <br><br>
+        <input type="submit" value="Wgraj obraz z internetu" style="height:50px; width:150px" />
+        </form>
+    <hr>
+    <h4>Dodaj zdjęcie z dysku:</h4>
+    <i>Maksymalny rozmiar zdjęcia 10 MB</i><br><br>Wybierz zdjęcie do wgrania : <br>
+        <form action="UploadServlet" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/gif,image/jpeg,image/png" />
+        <br><br>
+        <input type="submit" value="Wgraj obraz z dysku" style="height:50px; width:150px" />
+        </form>
+    <hr>
+</center>
+    </body>
+</html>

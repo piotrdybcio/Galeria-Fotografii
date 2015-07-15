@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Simple</servlet-name>
+    <servlet-class>Simple</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Save</servlet-name>
+    <servlet-class>Save</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>WelcomeServlet</servlet-name>
+    <servlet-class>WelcomeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewSelectedPhoto</servlet-name>
+    <servlet-class>ViewSelectedPhoto</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PhotoEditValue</servlet-name>
+    <servlet-class>PhotoEditValue</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdaterImageValue</servlet-name>
+    <servlet-class>UpdaterImageValue</servlet-class>
+  </servlet>
+<servlet>
+   <servlet-name>UploadServlet</servlet-name>
+   <servlet-class>UploadServlet</servlet-class>
+</servlet>
+<servlet>
+   <servlet-name>DownloadServlet</servlet-name>
+   <servlet-class>DownloadServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>UploadServlet</servlet-name>
+   <url-pattern>/UploadServlet</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+   <servlet-name>DownloadServlet</servlet-name>
+   <url-pattern>/DownloadServlet</url-pattern>
+</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Simple</servlet-name>
+    <url-pattern>/go</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>Save</servlet-name>
+    <url-pattern>/save</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WelcomeServlet</servlet-name>
+    <url-pattern>/welcome</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewSelectedPhoto</servlet-name>
+    <url-pattern>/vsp</url-pattern><!--View Selected Photo-->
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PhotoEditValue</servlet-name>
+    <url-pattern>/pev</url-pattern><!--View Selected Photo-->
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdaterImageValue</servlet-name>
+    <url-pattern>/uiv</url-pattern><!--View Selected Photo-->
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>welcome</welcome-file>
+  </welcome-file-list>
+  
+  <context-param> 
+    <description>Location to store uploaded file</description> 
+    <param-name>file-upload</param-name> 
+    <param-value>
+        C:\Users\Piotr\Dropbox\opa_lab4_galeria\opa_lab4\web\images\
+     </param-value> 
+</context-param>
+</web-app>

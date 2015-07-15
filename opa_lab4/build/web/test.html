@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!--[if lt IE 7 ]> 	<html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    	<html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    	<html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if gte IE 8]> 	<html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if !IE]><!-->  <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+	<title></title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript" ></script>
+	<style type="text/css" media="screen">
+ 
+		html 	 { background: green; }
+ 
+		html.ie7 { background: blue; }
+		html.ie8 { background: yellow; }
+		html.ie9 { background: red; }
+ 
+	</style>
+	<script type="text/javascript" >
+		$(document).ready(function(){
+ 
+			if ( $.browser.msie )
+			{
+				alert( 'This is a Microsoft Internet Explorer ' + $.browser.version.substr(0, 1) );
+			}
+			else if ( $.browser.mozilla )
+			{
+				alert( 'This is a Mozilla Firefox ' + $.browser.version.substr(0, 1) );
+			}
+			else if ( $.browser.webkit || $.browser.safari )
+			{
+				alert( 'This is a Webkit Engine Browser (Apple Safari or Google Chrome) with version ' + $.browser.version.substr(0, 1) );
+			}
+			else if ( $.browser.opera )
+			{
+				alert( 'This is an Opera ' + $.browser.version.substr(0, 1) );
+			}	
+ 
+		})
+	</script>
+</head>
+<body>
+	<p>
+		default: green
+		<br/>
+		ie7: blue
+		<br/>
+		ie8: yellow
+		<br/>
+		ie9: red
+	</p>
+</body>
+</html>
